@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  # Vue.jsコンテナ
+  frontend:
+    container_name: frontend
+    build: .
+    ports:
+      - 8080:8080
+    privileged: true
+    volumes:
+      - .:/task_management_app
+    tty: true
+    stdin_open: false
+    command: /bin/sh
