@@ -8,7 +8,7 @@ describe('MgtButton', () => {
         it('mgt-buttonクラスを持つbutton要素で構成されること', () => {
           const button = mount(MgtButton)
           expect(button.is('button')).toEqual(true)
-          expect(button.classes()).toInclude('mgt-button')
+          expect(button.classes()[0]).toContain('mgt-button')
         })
       })
       describe('button', () => {
@@ -16,7 +16,7 @@ describe('MgtButton', () => {
           propsData: { type: 'button' }
         })
         expect(button.is('button')).toEqual(true)
-        expect(button.classes()).toInclude('mgt-button')
+        expect(button.classes()[0]).toContain('mgt-button')
       })
     })
     describe('text', () => {
@@ -25,7 +25,7 @@ describe('MgtButton', () => {
           propsData: { type: 'text' }
         })
         expect(button.is('button')).toEqual(true)
-        expect(button.classes()).toInclude('mgt-button-text')
+        expect(button.classes()[0]).toContain('mgt-button-text')
       })
     })
   })
@@ -33,7 +33,7 @@ describe('MgtButton', () => {
     describe('デフォルト', () => {
       it('disabled属性が付与されていないこと', () => {
         const button = mount(MgtButton)
-        expect(button.attributes()).toBeAn('undefined')
+        expect(button.attributes().disabled).toBeUndefined()
       })
     })
     describe('true', () => {
@@ -47,7 +47,7 @@ describe('MgtButton', () => {
     describe('false', () => {
       it('disabled属性が付与されていないこと', () => {
         const button = mount(MgtButton)
-        expect(button.attributes().disabled).toBeAn('undefined')
+        expect(button.attributes().disabled).toBeUndefined()
       })
     })
   })
@@ -79,4 +79,3 @@ describe('スロット', () => {
     })
   })
 })
-
