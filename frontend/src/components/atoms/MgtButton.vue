@@ -1,34 +1,38 @@
 <template>
-  <button :class="classes" :disabled="disabled" type="button" @click="handleClick">
+  <button
+    :class="classes"
+    :disabled="disabled"
+    type="button"
+    @click="handleClick">
     <slot />
   </button>
 </template>
 
 <script>
-  export default {
-    name: 'MgtButton',
-    props: {
-      type: {
-        String,
-        default: 'button'
-      },
-      disabled: {
-        type: Boolean,
-        default: false
-      }
+export default {
+  name: 'MgtButton',
+  props: {
+    type: {
+      type: String,
+      default: 'button'
     },
-    computed: {
-      classes () {
-        const cls = this.type === 'text' ? ('-' + this.type) : ''
-        return [`mgt-button${cls}`]
-      }
-    },
-    methods: {
-      handleClick (ev) {
-        this.$emit('click', ev)
-      }
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    classes () {
+      const cls = this.type === 'text' ? ('-' + this.type) : ''
+      return [`mgt-button${cls}`]
+    }
+  },
+  methods: {
+    handleClick (ev) {
+      this.$emit('click', ev)
     }
   }
+}
 </script>
 
 <style scoped>
