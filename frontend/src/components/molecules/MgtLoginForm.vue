@@ -10,7 +10,7 @@
         placeholder="例: Mgt@domain.com"
         @focus="resetError">
       <ul class="validation-errors">
-        <li v-if="!validation.email.form">
+        <li v-if="!validation.email.format">
           メールアドレスの形式が不正です
         </li>
         <li v-if="!validation.email.required">
@@ -26,8 +26,8 @@
         type="password"
         autocomplete="off"
         placeholder="例:xxxxxx"
-        @focus="validation-errors">
-      <ul>
+        @focus="resetError">
+      <ul class="validation-errors">
         <li v-if="!validation.password.required">
           パスワードが入力されていません
         </li>
@@ -50,7 +50,7 @@
 <script>
 import MgtButton from '@/components/atoms/MgtButton'
 
-const REGEX_EMAIL = /^(([^<>()[\]||.,;:|s@]+(\.[^<>()[\]\\.,;:\s@]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const REGEX_EMAIL = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/
 const required = val => !!val.trim()
 
 export default {
