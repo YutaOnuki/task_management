@@ -9,6 +9,8 @@ import ErrorBoundary from './ErrorBoundary.vue'
 
 Vue.config.productionTip = false
 
+Vue.config.performance = true
+
 Vue.component(ErrorBoundary.name, ErrorBoundary)
 
 Vue.config.errorHandler = (err, vm, info) => {
