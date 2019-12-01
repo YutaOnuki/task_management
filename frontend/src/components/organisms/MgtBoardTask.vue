@@ -1,25 +1,14 @@
 <template>
-  <div>
-    <MgtBoardNavigation />
-    <MgtTaskListHeader />
-    <MgtTaskCard />
-    <MgtTaskForm />
-  </div>
+  <MgtTaskList />
 </template>
 
 <script>
-import MgtBoardNavigation from '@/components/molecules/MgtBoardNavigation.vue'
-import MgtTaskListHeader from '@/components/molecules/MgtTaskListHeader'
-import MgtTaskCard from '@/components/molecules/MgtTaskCard'
-import MgtTaskForm from '@/components/molecules/MgtTaskForm'
+import MgtTaskList from '@/components/organisms/MgtTaskList'
 
 export default {
   name: 'MgtBordTask',
   components: {
-    MgtBoardNavigation,
-    MgtTaskListHeader,
-    MgtTaskCard,
-    MgtTaskForm
+    MgtTaskList
   }
 }
 </script>
