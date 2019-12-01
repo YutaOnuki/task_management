@@ -4,11 +4,13 @@
 
 <script>
 import MgtBoardNavigation from '@/components/molecules/MgtBoardNavigation.vue'
+import MgtTaskListHeader from '@/components/molecules/MgtTaskListHeader'
 
 export default {
   name: 'MgtBordTask',
   components: {
-    MgtBoardNavigation
+    MgtBoardNavigation,
+    MgtTaskListHeader
   }
 }
 </script>
