@@ -38,6 +38,7 @@ export default {
 <style scoped>
 .mgt-button {
   padding: .6em 1.3em;
+  background-color: aliceblue;
 }
 .mgt-button-text {
   border: none;
