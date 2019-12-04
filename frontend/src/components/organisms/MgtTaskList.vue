@@ -32,7 +32,6 @@ export default {
 <style scoped>
 .mgt-task-list-container {
   flex-basis: 30%;
-  background-color: aqua;
 }
 
 .mgt-task-list {
@@ -40,6 +39,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   margin: 5px;
-  background-color: blue;
+  border: solid 1px black;
+  border-radius: 10px;
 }
 </style>

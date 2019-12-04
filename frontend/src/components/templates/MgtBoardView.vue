@@ -31,6 +31,5 @@ export default {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  background-color: bisque;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <header>
-    <div class="mgt-board-navigation-header">
+  <header class="mgt-board-navi-header">
+    <div class="mgt-board-navi-header-contents">
       <h2>Task Management App</h2>
-      <nav class="mgt-board-navigation-menu">
+      <nav class="mgt-board-navi-menu">
         <p>ログオフ</p>
       </nav>
     </div>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  header {
+  .mgt-board-navi-header {
     z-index: 10;
     background-color: gainsboro;
     width: 100%;
@@ -25,14 +25,14 @@ export default {
     left: 0px;
   }
 
-  .mgt-board-navigation-header {
+  .mgt-board-navi-header-contents {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
   }
 
-  .mgt-board-navigation-menu {
+  .mgt-board-navi-menu {
     list-style-type: none;
     position: absolute;
     right: 0;

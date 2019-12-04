@@ -25,17 +25,22 @@ export default {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 70%;
-  padding: 30px;
-  background-color: rgb(223, 219, 213);
+  background-color: gainsboro;
+  margin: 5px;
+  border-radius: 10px;
+  border: solid 1px black;
 }
 
 .mgt-task-text {
-  flex-basis: 100%;
+  flex-basis: 80%;
+  margin: 5px;
+  border: solid 1px black;
 }
 
 .mgt-button {
-  flex-basis: 50%;
+  flex-basis: 40%;
+  margin: 5px;
+  font-size: 5px;
+  border-radius: 10px;
 }
 </style>
