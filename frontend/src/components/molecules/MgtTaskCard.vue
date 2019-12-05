@@ -2,7 +2,7 @@
   <div class="mgt-task-card-contents">
     <p class="mgt-task-card">タスク1<!-- {{ タスク名が入る予定、レイアウト確認で文字を仮表示させている }}  --></p>
     <!-- TODO font-awesomeを使うかもしれない レイアウト確認で×印を仮表示させている-->
-    <MgtIcon>×</MgtIcon>
+    <MgtIcon><i class="fas fa-times" /></MgtIcon>
   </div>
 </template>
 

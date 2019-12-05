@@ -1,7 +1,7 @@
 <template>
   <header class="mgt-task-list-header">
     <h4 class="mgt-task-list-header-title">TODO</h4>
-    <MgtIcon>＋</MgtIcon>
+    <MgtIcon><i class="fas fa-plus" /></MgtIcon>
   </header>
 </template>
 

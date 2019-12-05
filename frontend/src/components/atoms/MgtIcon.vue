@@ -12,5 +12,9 @@ export default {
 
 <style scoped>
 .mgt-task-list-icon {
+  border: none;
+  background-color: gainsboro;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 </style>
