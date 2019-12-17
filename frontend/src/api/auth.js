@@ -1,5 +1,4 @@
-// import client from './client'
-import client from 'axios'
+import client from './client'
 
 export default {
   login: authInfo => {

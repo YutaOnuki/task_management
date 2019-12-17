@@ -12,8 +12,22 @@ const state = {
     userId: null
   },
   board: {
-    lists: []
-  }
+    lists: [] // array taskListを格納する配列
+  }// ,
+  // Vuexで管理しないため、使用するコンポーネントのdata属性に移動
+  // 各タスク情報
+  // task: {
+  //   id: null, // integer
+  //   name: null, // string
+  //   description: null, // string
+  //   listId: null // integer taskListのidと紐づく
+  // },
+  // // タスクリスト
+  // taskList: {
+  //   id: null, // integer taskのlistIdと紐づく
+  //   name: null, // string
+  //   items: [] // array taskを格納する配列
+  // }
 }
 
 export default new Vuex.Store({

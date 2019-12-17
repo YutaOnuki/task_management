@@ -18,6 +18,9 @@ export default {
   components: {
     MgtBoardTask,
     MgtBoardNavigation
+  },
+  created () {
+    this.$store.dispatch('fetchLists')
   }
 }
 </script>

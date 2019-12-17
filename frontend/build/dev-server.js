@@ -10,6 +10,20 @@ module.exports = app => {
     }
   }
 
+  // 仮の返却データ
+  const taskLists = [
+    {
+      id: 1,
+      name: 'work',
+      items: []
+    },
+    {
+      id: 2,
+      name: 'private',
+      items: []
+    }
+  ]
+
   app.post('/auth/login', (req, res) => {
     const { email, password } = req.body
     const user = users[email]
@@ -23,5 +37,9 @@ module.exports = app => {
     } else {
       res.status(404).json({ message: 'ユーザーが登録されていません' })
     }
+  })
+
+  app.post('/list/fetchLists', (req, res) => {
+    res.json({ taskLists: taskLists })
   })
 }

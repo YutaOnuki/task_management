@@ -10,7 +10,9 @@ export default {
     })
   },
   fetchLists: ({ commit }) => {
-    throw new Error('fetchLists action should be implemented')
+    return List.fetchLists().then(({ taskLists }) => {
+      commit(types.FETCH_ALL_TASKLIST, { taskLists })
+    })
   },
   addTask: ({ commit }) => {
     throw new Error('addTask action should be implemented')
